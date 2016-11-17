@@ -1,0 +1,35 @@
+<div class="Application">
+  <header class="Application__header">
+    <div class="padding">
+      <p>I am the header</p>
+    </div>
+  </header>
+
+  <div class="Application__main">
+    <div class="Application__left-panel">
+      <div class="padding">
+        Left panel
+      </div>
+    </div>
+    <div class="Application__center-panel">
+      <div class="Application__center-panel-header">
+        <div class="padding">
+          Panel header
+        </div>
+      </div>
+      <div class="Application__center-panel-body">
+        <div class="padding">
+          {{#each data as |item|}}
+            <li>{{item}}</li>
+          {{/each}}
+        </div>
+      </div>
+      <div class="Application__center-panel-footer">
+        <div class="padding">
+          Panel footer
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

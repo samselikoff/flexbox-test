@@ -1,0 +1,52 @@
+html, body, p {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.padding {
+  padding: 20px;
+}
+
+.Application {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  &__header {
+    flex: 1 0 60px;
+    background: #222;
+  }
+
+  &__main {
+    background: #e4e4e4;
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+  &__left-panel {
+    flex: 0 0 30%;
+    background: #444;
+  }
+
+  &__center-panel {
+    flex: 0 0 70%;
+    background: #666;
+    display: flex;
+    flex-direction: column;
+  }
+  &__center-panel-header {
+    height: 60px;
+    background: #999;
+  }
+  &__center-panel-body {
+    background: #bbb;
+    flex: 1;
+    overflow: scroll;
+  }
+  &__center-panel-footer {
+    height: 60px;
+    background: #999;
+  }
+}
